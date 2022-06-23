@@ -109,6 +109,31 @@ text-transform: uppercase;
         left: 9%;
     }
     
+    .footer {
+        height: 100px;
+        position: relative;
+        background-color: black;
+    }
+
+    .back-top {
+        position: absolute;
+        width: 56px;
+        height: 56px;
+        left: 50%;
+        top: -28px;
+        background-color: white;
+        border-radius: 50%;
+    }
+    .back-top a {
+        width: 40px;
+        height: 40px;
+        display: block;
+        margin: 8px;
+        border-radius: 50%;
+        text-align: center;
+        background: black;
+        line-height: 35px;
+    }
 @media screen and (min-width: 1450px) and (max-width: 2560px) {
     ul.menu-home li.nav-item {
         padding-left: 5rem!important;
