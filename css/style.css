@@ -1,5 +1,13 @@
 /* home */
-
+@font-face {
+    font-family: "CustomFont";
+    src: url("../font/regular-ivymode/IvyMode-Regular.ttf");
+    
+    }
+@font-face {
+    font-family: "August Stories";
+    src: url("../font/august-stories-august-stories-script-400.ttf");
+    }
  ul.menu-home li.nav-item {
     font-family: 'Work Sans';
 font-style: normal;
@@ -53,6 +61,9 @@ text-transform: uppercase;
     .carousel-indicators .active {
         background-color: #F8578D;
     }
+    .carousel-caption-home .container {
+        max-width: 81%;
+    }
     .carousel-indicators li {
          opacity: 1 !important;
          margin-right: 0px !important;
@@ -98,7 +109,7 @@ text-transform: uppercase;
         top: 0;
         left: 0;
         margin-left: 20px;
-        margin-top: 15%;
+        margin-top: 8%;
         transform: rotate(90deg);
         transform-origin: 0 0;
         font-size: 14px;
@@ -108,10 +119,35 @@ text-transform: uppercase;
         transform: rotate(-90deg);
         left: 9%;
     }
+    .hotel-left {
+        margin: 100px 0px;
+        text-align: center;
+    }
+
+    .hotel-right {
+        position: relative;
+       
+    }
+    .hotel-right p{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+        text-align: center;
+    }
     
+    .hotel-right button{
+        margin: 0;
+        position: absolute;
+        top: 65%;
+        transform: translate(0%, -50%);
+    
+    }
+    /* ================= footer ============= */
     .footer {
         position: relative;
         background-color: black;
+        padding-top: 80px;
     }
 
     .back-top {
@@ -123,6 +159,7 @@ text-transform: uppercase;
         background-color: white;
         border-radius: 50%;
     }
+    
     .back-top a {
         width: 40px;
         height: 40px;
@@ -142,11 +179,7 @@ text-transform: uppercase;
     padding-bottom: 10px;
     color: #FFFF;
 }
-@font-face {
-font-family: "CustomFont";
-src: url("../font/regular-ivymode/IvyMode-Regular.ttf");
 
-}
     h6.title-footer{
       font-family: 'CustomFont';
     font-weight: 600;
@@ -169,33 +202,20 @@ p.btn-rounded.text-white:hover{
   background-color: rgba(0, 0, 0, 0.05); 
   color:#626262 !important;
 }
-.back-to-top {
-  background-color: black;
-    border-radius: 40px;
-    top: 20px;
-    position: fixed;
-    width: 80px;
-    height: 80px;
-    font-size: 28px;
-}
-.btn.back-to-top{
-  border: 10px solid white;
-}
-.back-to-top:hover{
-background-color: black;
-}
-.back-to-top:focus{
-box-shadow: none;
-}
-.back-to-top:not(:disabled):not(.disabled):active{
-background-color: black;
-box-shadow: none;
-}
+
 .btn-light:not(:disabled):not(.disabled):active:focus{
   box-shadow: none;
 }
 .btn.back-to-top:active{
 border: 10px solid transparent;
+}
+h6.fw-bold.mb-4.title-footer span {
+    font-family: 'August Stories';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 54px;
+
 }
 @media screen and (min-width: 1450px) and (max-width: 2560px) {
     ul.menu-home li.nav-item {
