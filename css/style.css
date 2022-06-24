@@ -227,8 +227,197 @@ text-transform: uppercase;
             position: static;
         }
     }
-    
+    /*================== Folow us==============*/
+    .title {
+        font-family: "Ivy mode";
+        background-color: #F3F1EB;
+        padding: 70px 0px;
+    }
 
+    .top_follow {
+        border-radius: 35px;
+        font-size: 37px;
+        height: 70px;
+        width: 70px;
+        background-color: white;
+        padding: 15px 0px;
+        color: #4F4F4F;
+    }
+
+    .fl {
+        font-size: 48px;
+        padding: 10px 10px;
+    }
+
+    .image {
+        margin: 0px 0px;
+        text-align: center;
+        width: max-content;
+    }
+
+    .image .cont p {
+        float: left;
+        display: inline;
+    }
+
+    .cont span {
+        float: right;
+        margin-left: 25px;
+
+    }
+
+    .cont {
+        font-family: "Work Sans";
+        margin-top: 20px;
+    }
+
+    .follow-item {
+        text-align: -webkit-center;
+    }
+
+    .top_footer {
+        color: white;
+        padding: 80px 0px;
+    }
+
+    .mt-5.text-white {
+        background-color: rgba(0, 0, 0, 0.05);
+        color: #626262 !important;
+    }
+
+    .text-white {
+        font-family: 'Work Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .booking_online {
+        height: 100%;
+        width: 100%;
+    }
+
+    .booking_online.title {
+        background-image: url(../images/home/unsplash_q--99IzY8Lw.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    .fl span {
+        font-family: "August Stories";
+        font-size: 96px;
+        color: #F8578D;
+    }
+
+    .text-white .rounded {
+        backdrop-filter: blur(30px);
+        border-radius: 27px !important;
+        color: black !important;
+        height: 90%;
+    }
+
+    .bk-ol {
+        font-size: 16px;
+        color: black !important;
+        display: flex;
+    }
+
+    .bk-ol p {
+        width: 40%;
+        margin: 20px 0px;
+        padding: 0px 50px;
+    }
+
+    input[type="number"] {
+        -webkit-appearance: textfield;
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+
+    input.form-control.rounded {
+        background-color: rgba(255, 255, 255, 0.3);
+        height: 50px;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+    }
+
+    .number-input button {
+        -webkit-appearance: none;
+        background-color: transparent;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        margin: 0;
+        position: relative;
+    }
+
+    input.quantity {
+        background: no-repeat;
+        border: none;
+    }
+
+    .number-input input[type=number] {
+        text-align: center;
+    }
+
+    .md-number-input.number-input {
+        padding: 0px 0px;
+        border-radius: 30px;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(30px);
+        width: 40%;
+        height: 50px;
+    }
+
+    .md-number-input.number-input button {
+        outline: none;
+        width: 3rem;
+        height: 2rem;
+        padding-top: .8rem;
+    }
+
+    .md-number-input.number-input button.minus {
+        padding-left: 8px;
+    }
+
+    .md-number-input.number-input button.plus {
+        padding-left: 2px;
+    }
+
+    .md-number-input.number-input input[type=number] {
+        max-width: 5rem;
+        font-size: 20px;
+        line-height: 23px;
+        flex: none;
+        flex-grow: 0;
+        outline: none;
+    }
+
+    .booking-now {
+        text-align: center;
+        margin: 50px 0px;
+    }
+
+    .booking-now button {
+        background: #F8578D;
+        border-radius: 22px;
+        padding: 10px 48px;
+        color: white;
+        border: none;
+    }
+
+    input.quantity {
+        background-color: unset;
+        padding: 0px 0px;
+        margin: 0px 0px;
+        width: 10px;
+    }
     /* ================= footer ============= */
     .footer {
         position: relative;
