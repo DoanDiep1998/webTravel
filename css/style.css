@@ -8,6 +8,10 @@
     font-family: "August Stories";
     src: url("../font/august-stories-august-stories-script-400.ttf");
     }
+    @font-face {
+        font-family: "WorkSans-Medium";
+        src: url("../font/Work_Sans/static/WorkSans-Medium.ttf");
+        }
  ul.menu-home li.nav-item {
     font-family: 'Work Sans';
 font-style: normal;
@@ -119,6 +123,36 @@ text-transform: uppercase;
         transform: rotate(-90deg);
         left: 9%;
     }
+
+    /*============ holtel========= */
+    section.container.main-page2{
+    position: relative;
+    background-image: url("../images/home/wood-texture-1.png"), url("../images/home/wood-texture-slider-new.png");
+    background-repeat: no-repeat,no-repeat;
+    background-size: 100%,100%;
+    background-position: right 200px top 0px ,left 500px bottom 200px;
+    }
+    .title-hotel{
+        margin-top: 30px;
+        font-family: 'Ivy Mode';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 61px;
+        position: absolute;
+        left: 40%;
+        top: 25%;
+        z-index: 1;
+    }
+    .title-hotel span{
+        font-family: 'August Stories';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 128px;
+        line-height: 109px;
+        color: #F8578D;
+    }
+
     .hotel-left {
         margin: 100px 0px;
         text-align: center;
@@ -129,20 +163,72 @@ text-transform: uppercase;
        
     }
     .hotel-right p{
+        font-family: 'Work Sans', sans-serif;;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
         margin: 0;
         position: absolute;
         top: 50%;
         transform: translate(0%, -50%);
-        text-align: center;
+        text-align: justify;
     }
     
     .hotel-right button{
-        margin: 0;
+        background: #FFFFFF;
+        border: 1px solid #333333;
+        border-radius: 20px;
         position: absolute;
         top: 65%;
-        transform: translate(0%, -50%);
-    
+        padding: 12px 48px;
+
+        font-family: 'Work Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
     }
+    @media screen and (min-width: 320px) and (max-width: 768px) {
+        .title-hotel{
+            text-align: center;
+            position: static;
+            font-size: 36px;
+            line-height:46px;
+           
+      
+        }
+        .hotel-left {
+            margin: 30px 0px;
+            text-align: center;
+        }   
+
+        .hotel-right{
+            text-align: center;
+            padding-bottom: 68px;
+        }
+
+        .hotel-right p{
+            position: static;
+            top: 50%;
+            transform: translate(0%, 0%);
+           
+        }
+
+        .title-hotel span{
+            font-family: 'August Stories';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 96px;
+            line-height: 81px;
+            color: #F8578D;
+        }
+        .hotel-right button{
+            position: static;
+        }
+    }
+    
+
     /* ================= footer ============= */
     .footer {
         position: relative;
