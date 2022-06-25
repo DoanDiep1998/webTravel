@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/all.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/37077db693.js" crossorigin="anonymous"></script>
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Vietnam Luxury</title>
@@ -22,212 +22,47 @@
 
 <body>
     <style>
-        @font-face {
-            font-family: "Ivy mode";
-            src: url("../font/regular-ivymode/IvyMode-Regular.ttf");
-        }
-
-        @font-face {
-            font-family: "Work Sans";
-            src: url("../font/Work_Sans/WorkSans-VariableFont_wght.ttf");
-        }
-
-        @media all and (min-width: 320px) {
+        @media screen and (min-width: 768px) {
             .bottom-ft {
-                width: 100%;
+                max-width: 25% !important;
+                bottom: 25px;
             }
         }
 
-        .title {
-            font-family: "Ivy mode";
-            background-color: #F3F1EB;
-            padding: 70px 0px;
+        @media screen and (min-width: 320px) and (max-width: 425px) {
+            .back-top {
+                left: 43%;
+            }
+
+            section.booking_online.title {
+                background-size: auto;
+            }
+
+            .md-number-input.number-input button {
+                width: 25px;
+                display: inline;
+                margin: 0px 15px;
+            }
+
+            .bk-ol p {
+                padding: 0px 15px;
+                margin-top: 40px;
+            }
+
+            .md-number-input.number-input {
+                margin-top: 30px;
+            }
+        
         }
 
-        .top_follow {
-            border-radius: 35px;
-            font-size: 37px;
-            height: 70px;
-            width: 70px;
-            background-color: white;
-            padding: 15px 0px;
-            color: #4F4F4F;
-        }
+        @media screen and (min-width: 425px) and (max-width: 768px) {
+            .bk-ol p {
+                padding: 0px 0px;
+            }
+            .md-number-input.number-input {
+                width: 100%;
 
-        .fl {
-            font-size: 48px;
-            padding: 10px 10px;
-        }
-
-        .image {
-            margin: 0px 0px;
-            text-align: center;
-            width: max-content;
-        }
-
-        .image .cont p {
-            float: left;
-            display: inline;
-        }
-
-        .cont span {
-            float: right;
-            margin-left: 25px;
-
-        }
-
-        .cont {
-            font-family: "Work Sans";
-            margin-top: 20px;
-        }
-
-        .follow-item {
-            text-align: -webkit-center;
-        }
-
-        .top_footer {
-            color: white;
-            padding: 80px 0px;
-        }
-
-        .mt-5.text-white {
-            background-color: rgba(0, 0, 0, 0.05);
-            color: #626262 !important;
-        }
-
-        .text-white {
-            font-family: 'Work Sans', sans-serif;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 20px;
-        }
-
-        .booking_online {
-            height: 100%;
-            width: 100%;
-        }
-
-        .booking_online.title {
-            background-image: url(../images/home/unsplash_q--99IzY8Lw.png);
-            background-repeat: no-repeat;
-            background-size: 100%;
-        }
-
-        .fl span {
-            font-family: "August Stories";
-            font-size: 96px;
-            color: #F8578D;
-        }
-
-        .text-white .rounded {
-            backdrop-filter: blur(30px);
-            border-radius: 27px !important;
-            color: black !important;
-            height: 90%;
-        }
-
-        .bk-ol {
-            font-size: 16px;
-            color: black !important;
-            display: flex;
-        }
-
-        .bk-ol p {
-            width: 40%;
-            margin: 20px 0px;
-            padding: 0px 50px;
-            
-        }
-
-        input[type="number"] {
-            -webkit-appearance: textfield;
-            -moz-appearance: textfield;
-            appearance: textfield;
-        }
-
-        input.form-control.rounded {
-            background-color: rgba(255, 255, 255, 0.3);
-            height: 50px;
-        }
-
-        input[type=number]::-webkit-inner-spin-button,
-        input[type=number]::-webkit-outer-spin-button {
-            -webkit-appearance: none;
-        }
-
-        .number-input button {
-            -webkit-appearance: none;
-            background-color: transparent;
-            border: none;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            margin: 0;
-            position: relative;
-        }
-
-        input.quantity {
-            background: no-repeat;
-            border: none;
-        }
-
-        .number-input input[type=number] {
-            text-align: center;
-        }
-
-        .md-number-input.number-input {
-            padding: 0px 0px;
-            border-radius: 30px;
-            text-align: center;
-            background: rgba(255, 255, 255, 0.3);
-            backdrop-filter: blur(30px);
-            width: 40%;
-            height: 50px;
-        }
-
-        .md-number-input.number-input button {
-            outline: none;
-            width: 3rem;
-            height: 2rem;
-            padding-top: .8rem;
-        }
-
-        .md-number-input.number-input button.minus {
-            padding-left: 8px;
-        }
-
-        .md-number-input.number-input button.plus {
-            padding-left: 2px;
-        }
-
-        .md-number-input.number-input input[type=number] {
-            max-width: 5rem;
-            font-size: 20px;
-            line-height: 23px;
-            flex: none;
-            flex-grow: 0;
-            outline: none;
-        }
-
-        .booking-now {
-            text-align: center;
-            margin: 50px 0px;
-        }
-
-        .booking-now button {
-            background: #F8578D;
-            border-radius: 22px;
-            padding: 10px 48px;
-            color: white;
-            border: none;
-        }
-
-        input.quantity {
-            background-color: unset;
-            padding: 0px 0px;
-            margin: 0px 0px;
-            width: 10px;
+            }
         }
     </style>
     <section class="menu">
@@ -265,7 +100,7 @@
                 </li> -->
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <button type="button" class="btn btn-circle btn-sm ">
+                    <button type="button" class="btn  btn-circle btn-sm ">
                         <img src="../images/home/findIcon.png" alt="" width="20px" height="20px">
                     </button>
                     <button type="button" class="btn  btn-circle btn-sm ml-md-2  ml-lg-3">
@@ -344,153 +179,164 @@
             </div>
         </div>
     </section>
+    <section class="container main-page2">
+        <h6 class="title-hotel">
+            ExtraOrdinary <span> Hotel</span>
+        </h6>
+        <div class=" row">
+            <div class="col-xs-12 col-xl-6 col-lg-6  col-md-12 hotel-left ">
+                <img src="../images/home/Rectangle33.png" alt="" width="100%">
+            </div>
+            <div class=" col-xs-12 col-xl-6 col-lg-6   col-md-12 hotel-right">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nibh laoreet elit pretium. Dignissim
+                    diam
+                    placerat nisl, sit vel, phasellus ipsum gravida. Dui, egestas sit magna vitae eros, amet habitasse
+                    semper
+                    felis. Et nec ridiculus viverra pulvinar. Semper cras in faucibus feugiat facilisi. Augue mauris
+                    interdum
+                    nibh nibh dolor commodo semper integer. Nullam fames eu elementum diam felis, eu sit sit nunc.
+                    Cursus sit a,
+                    turpis fermentum feugiat. Fermentum neque, duis pretium quisque ac. Elit ultrices sed bibendum </p>
+                <button>
+                    more
+                </button>
+            </div>
 
+        </div>
+    </section>
     <div class="main-page">
-        <section class="booking_online title">
-            <h6 class="fw-bold mb-4 text-center fl">
-                Booking <span> Online</span>
-            </h6>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-lg-4 text-white">
-                        <div class="input-group rounded">
-                            <input type="search" class="form-control rounded" placeholder="Name" aria-label="Search"
-                                aria-describedby="search-addon" style="color: black!important;" />
+        <div class="main-page">
+            <section class="booking_online title">
+                <h6 class="fw-bold mb-4 text-center fl">
+                    Booking <span> Online</span>
+                </h6>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4 text-white">
+                            <div class="input-group rounded">
+                                <input type="search" class="form-control rounded" placeholder="Name" aria-label="Search"
+                                    aria-describedby="search-addon" style="color: black!important;" />
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 text-white bk-ol">
+                            <p>Adult</p>
+                            <div class="number-input md-number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    class="minus"><img src="../images/home/Vector91.png" alt="" width="20px"
+                                        height="20px"></button>
+                                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    class="plus"><img src="../images/home/Vector90.png" alt="" width="20px"
+                                        height="20px"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 text-white bk-ol">
+                            <p>Children</p>
+                            <div class="number-input md-number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    class="minus"><img src="../images/home/Vector91.png" alt="" width="20px"
+                                        height="20px"></button>
+                                <input class="quantity" min="0" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    class="plus"><img src="../images/home/Vector90.png" alt="" width="20px"
+                                        height="20px"></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-4 text-white bk-ol">
-                        <p>Adult</p>
-                        <div class="number-input md-number-input">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                class="minus"><img src="../images/home/Vector91.png" alt="" width="20px"
-                                    height="20px"></button>
-                            <input class="quantity" min="0" name="quantity" value="1" type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                class="plus"><img src="../images/home/Vector90.png" alt="" width="20px"
-                                    height="20px"></button>
-                        </div>
-                        <!-- <div class="input-group">
-                                <span class="input-group-btn">
-                                    <button type="button" class="quantity-left-minus btn btn-danger btn-number"
-                                        data-type="minus" data-field="">
-                                        <span class="glyphicon glyphicon-minus"></span>
-                                    </button>
-                                </span>
-                                <input type="text" id="quantity" name="quantity" class="form-control input-number"
-                                    value="10" min="1" max="100">
-                                <span class="input-group-btn">
-                                    <button type="button" class="quantity-right-plus btn btn-success btn-number"
-                                        data-type="plus" data-field="">
-                                        <span class="glyphicon glyphicon-plus"></span>
-                                    </button>
-                                </span>
-                            </div> -->
+                    <div class="booking-now">
+                        <button>Booking now</button>
                     </div>
-                    <div class="col-md-4 col-lg-4 text-white bk-ol">
-                        <p>Children</p>
-                        <div class="number-input md-number-input">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
-                                class="minus"><img src="../images/home/Vector91.png" alt="" width="20px"
-                                    height="20px"></button>
-                            <input class="quantity" min="0" name="quantity" value="1" type="number">
-                            <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
-                                class="plus"><img src="../images/home/Vector90.png" alt="" width="20px"
-                                    height="20px"></button>
+                </div>
+            </section>
+            <section class="follow_us title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <i class="top_follow fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-center fl">Follow us</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xl-4 col-md-6 follow-item">
+                            <div class="image">
+                                <img src="../images/home/Rectangle.png" alt="">
+                                <div class="cont">
+                                    <p>#tagline </p>
+
+                                    <span> <img src="../images/home/cmt.png" alt=""> 12</span>
+                                    <span><img src="../images/home/heart.png" alt=""> 12</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4 col-xl-4 col-md-6  follow-item">
+                            <div class="image">
+                                <img src="../images/home/Rectangle.png" alt="">
+                                <div class="cont">
+                                    <p>#tagline </p>
+
+                                    <span> <img src="../images/home/cmt.png" alt=""> 12</span>
+                                    <span><img src="../images/home/heart.png" alt=""> 12</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4 col-xl-4 col-md-6 follow-item">
+                            <div class="image">
+                                <img src="../images/home/Rectangle.png" alt="">
+                                <div class="cont">
+                                    <p>#tagline </p>
+
+                                    <span> <img src="../images/home/cmt.png" alt=""> 12</span>
+                                    <span><img src="../images/home/heart.png" alt=""> 12</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4  col-xl-4 col-md-6  follow-item">
+                            <div class="image">
+                                <img src="../images/home/Rectangle.png" alt="">
+                                <div class="cont">
+                                    <p>#tagline </p>
+
+                                    <span> <img src="../images/home/cmt.png" alt=""> 12</span>
+                                    <span><img src="../images/home/heart.png" alt=""> 12</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4  col-xl-4  col-md-6 follow-item">
+                            <div class="image">
+                                <img src="../images/home/Rectangle.png" alt="">
+                                <div class="cont">
+                                    <p>#tagline </p>
+
+                                    <span> <img src="../images/home/cmt.png" alt=""> 12</span>
+                                    <span><img src="../images/home/heart.png" alt=""> 12</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-4 col-xl-4  col-md-6 follow-item">
+                            <div class="image">
+                                <img src="../images/home/Rectangle.png" alt="">
+                                <div class="cont">
+                                    <p>#tagline </p>
+
+                                    <span> <img src="../images/home/cmt.png" alt=""> 12</span>
+                                    <span><img src="../images/home/heart.png" alt=""> 12</span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <div class="booking-now">
-                    <button>Booking now</button>
-                </div>
-            </div>
-        </section>
-        <section class="follow_us title">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <i class="top_follow fa-brands fa-instagram"></i>
-                    </div>
-                </div>
-                <div>
-                    <p class="text-center fl">Follow us</p>
-                </div>
-                <div class="row">
-                    <div class="col-sm-4 col-xl-4 col-md-6 follow-item">
-                        <div class="image">
-                            <img src="../images/home/Rectangle.png" alt="">
-                            <div class="cont">
-                                <p>#tagline </p>
-
-                                <span> <img src="../images/home/cmt.png" alt=""> 12</span>
-                                <span><img src="../images/home/heart.png" alt=""> 12</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4 col-xl-4 col-md-6  follow-item">
-                        <div class="image">
-                            <img src="../images/home/Rectangle.png" alt="">
-                            <div class="cont">
-                                <p>#tagline </p>
-
-                                <span> <img src="../images/home/cmt.png" alt=""> 12</span>
-                                <span><img src="../images/home/heart.png" alt=""> 12</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4 col-xl-4 col-md-6 follow-item">
-                        <div class="image">
-                            <img src="../images/home/Rectangle.png" alt="">
-                            <div class="cont">
-                                <p>#tagline </p>
-
-                                <span> <img src="../images/home/cmt.png" alt=""> 12</span>
-                                <span><img src="../images/home/heart.png" alt=""> 12</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4  col-xl-4 col-md-6  follow-item">
-                        <div class="image">
-                            <img src="../images/home/Rectangle.png" alt="">
-                            <div class="cont">
-                                <p>#tagline </p>
-
-                                <span> <img src="../images/home/cmt.png" alt=""> 12</span>
-                                <span><img src="../images/home/heart.png" alt=""> 12</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4  col-xl-4  col-md-6 follow-item">
-                        <div class="image">
-                            <img src="../images/home/Rectangle.png" alt="">
-                            <div class="cont">
-                                <p>#tagline </p>
-
-                                <span> <img src="../images/home/cmt.png" alt=""> 12</span>
-                                <span><img src="../images/home/heart.png" alt=""> 12</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-sm-4 col-xl-4  col-md-6 follow-item">
-                        <div class="image">
-                            <img src="../images/home/Rectangle.png" alt="">
-                            <div class="cont">
-                                <p>#tagline </p>
-
-                                <span> <img src="../images/home/cmt.png" alt=""> 12</span>
-                                <span><img src="../images/home/heart.png" alt=""> 12</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </div>
+
     <footer class="text-center text-lg-start br-light text-muted">
         <div class="footer">
             <div class="back-top" id="back-to-top">
@@ -574,8 +420,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-md-0 mb-4 col-12 bottom-ft"
-                        style="max-width: 25%;">
+                    <div class="col-md-6 col-lg-6 col-xl-6 mx-auto mb-md-0 mb-4 col-12 bottom-ft">
                         <h6 class="fw-bold mb-4 title-footer">
                             Get in <span> Touch</span>
                         </h6>
@@ -589,7 +434,7 @@
                             Email *
                         </p>
                         <p class="btn btn-outline-light btn-rounded text-white"
-                            style="border-radius: 20px; padding: 10px 35px;">
+                            style="border-radius: 20px; padding: 5px 40px; margin-top: 20px;">
                             Send
                         </p>
                     </div>
@@ -597,12 +442,12 @@
             </div>
             </div>
 
-            <div class="container text-md-start mt-5" style="max-width: 100%;">
+            <div class="container" style="max-width: 100%;">
                 <div class="row">
-                    <div class="col-md-3 mt-5 col-6 text-white">
+                    <div class="col-md-3 mb-5 col-6 text-white">
                         © 2022 Vietnam Luxury Travel
                     </div>
-                    <div class="col-md-3 mt-5 col-6 text-white">
+                    <div class="col-md-3 mb-5 col-6 text-white">
                         <a><i class="fa-brands fa-instagram"></i> Instagram</a>
                     </div>
                 </div>
@@ -627,45 +472,9 @@
             });
         });
     </script>
-    <!-- <script>
-        $(document).ready(function () {
-
-            var quantitiy = 0;
-            $('.quantity-right-plus').click(function (e) {
-
-                // Stop acting like a button
-                e.preventDefault();
-                // Get the field name
-                var quantity = parseInt($('#quantity').val());
-
-                // If is not undefined
-
-                $('#quantity').val(quantity + 1);
-
-
-                // Increment
-
-            });
-
-            $('.quantity-left-minus').click(function (e) {
-                // Stop acting like a button
-                e.preventDefault();
-                // Get the field name
-                var quantity = parseInt($('#quantity').val());
-
-                // If is not undefined
-
-                // Increment
-                if (quantity > 0) {
-                    $('#quantity').val(quantity - 1);
-                }
-            });
-
-        });
-    </script> -->
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script> -->
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+crossorigin="anonymous"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>

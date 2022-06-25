@@ -2,236 +2,256 @@
 @font-face {
     font-family: "CustomFont";
     src: url("../font/regular-ivymode/IvyMode-Regular.ttf");
-    
-    }
+
+}
+
 @font-face {
     font-family: "August Stories";
     src: url("../font/august-stories-august-stories-script-400.ttf");
-    }
-    @font-face {
-        font-family: "WorkSans-Medium";
-        src: url("../font/Work_Sans/static/WorkSans-Medium.ttf");
-        }
- ul.menu-home li.nav-item {
+}
+
+@font-face {
+    font-family: "WorkSans-Medium";
+    src: url("../font/Work_Sans/static/WorkSans-Medium.ttf");
+}
+
+ul.menu-home li.nav-item {
     font-family: 'Work Sans';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 16px;
-text-transform: uppercase;
-    }
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
 
-    .btn-circle.btn-sm {
-        width: 44px;
-        height: 44px;
-        padding: 6px 0px;
-        border-radius: 22px;
-        font-size: 8px;
-    }
-    .btn-circle.btn-md {
-        width: 50px;
-        height: 50px;
-        padding: 7px 10px;
-        border-radius: 25px;
-        font-size: 10px;
-    }
-    .btn-circle {
-        text-align: center;
-        background-color: white;
-        border: 1px solid #EDEDED !important;
-    }
-    .btn-circle.btn-xl {
-        width: 70px;
-        height: 70px;
-        padding: 10px 16px;
-        border-radius: 35px;
-        font-size: 12px;
-    }
-    .btn-booking{
-        background: #272323 !important;
-        border-radius: 22px !important;
-        color: #FFFFFF !important;
-        font-family: 'Work Sans';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 16px;
-        text-transform: uppercase;
-        font-family: 'Work Sans';
-        padding: 14px 0px;
-        width: 200px;
+.btn-circle.btn-sm {
+    width: 44px;
+    height: 44px;
+    padding: 6px 0px;
+    border-radius: 22px;
+    font-size: 8px;
+}
 
-    }
-    .carousel-indicators .active {
-        background-color: #F8578D;
-    }
-    .carousel-caption-home .container {
-        max-width: 81%;
-    }
-    .carousel-indicators li {
-         opacity: 1 !important;
-         margin-right: 0px !important;
-        margin-left: 0px !important;
-        height: 1px !important;
-        width: 35px !important;
-        text-align: center;
-        text-indent: 0in !important;
-        color: #FFFFFF
+.btn-circle.btn-md {
+    width: 50px;
+    height: 50px;
+    padding: 7px 10px;
+    border-radius: 25px;
+    font-size: 10px;
+}
 
-    }
-    .home-slide-item img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        /* width: 100%;
+.btn-circle {
+    text-align: center;
+    background-color: white;
+    border: 1px solid #EDEDED !important;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 12px;
+}
+
+.btn-booking {
+    background: #272323 !important;
+    border-radius: 22px !important;
+    color: #FFFFFF !important;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: 'Work Sans';
+    padding: 14px 0px;
+    width: 200px;
+
+}
+
+.carousel-indicators .active {
+    background-color: #F8578D;
+}
+
+.carousel-caption-home .container {
+    max-width: 81%;
+}
+
+.carousel-indicators li {
+    opacity: 1 !important;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    height: 1px !important;
+    width: 35px !important;
+    text-align: center;
+    text-indent: 0in !important;
+    color: #FFFFFF
+}
+
+.home-slide-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;
         height: 100%; */
-        object-fit: cover;
-    }
+    object-fit: cover;
+}
 
-    .home-slide-item {
-        position: relative;
-        height: 700px;
-    }
+.home-slide-item {
+    position: relative;
+    height: 700px;
+}
 
-    .carousel-caption-home {
-        position: absolute;
-        top: 40%;
-        left: 0;
-        width: 100%;
-        z-index: 99;
-        color: #fff;
-    }
-    .carousel-caption-home h3 {
+.carousel-caption-home {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    color: #fff;
+}
+
+.carousel-caption-home h3 {
     font-size: 64px;
-    }
-    .carousel-caption-home-sub {
-        font-size:  20px;;
-        }
+}
 
-   
-    .scroll-down{
-        top: 0;
-        left: 0;
-        margin-left: 20px;
-        margin-top: 8%;
-        transform: rotate(90deg);
-        transform-origin: 0 0;
-        font-size: 14px;
-    }
-    .scroll-down img{
-        height: 100%;
-        transform: rotate(-90deg);
-        left: 9%;
-    }
+.carousel-caption-home-sub {
+    font-size: 20px;
+    ;
+}
 
-    /*============ holtel========= */
-    section.container.main-page2{
+
+.scroll-down {
+    top: 0;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 8%;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+    font-size: 14px;
+}
+
+.scroll-down img {
+    height: 100%;
+    transform: rotate(-90deg);
+    left: 9%;
+}
+
+/*============ holtel========= */
+section.container.main-page2 {
     position: relative;
     background-image: url("../images/home/wood-texture-1.png"), url("../images/home/wood-texture-slider-new.png");
-    background-repeat: no-repeat,no-repeat;
-    background-size: 100%,100%;
-    background-position: right 200px top 0px ,left 500px bottom 200px;
-    }
-    .title-hotel{
-        margin-top: 30px;
-        font-family: 'Ivy Mode';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 61px;
-        position: absolute;
-        left: 40%;
-        top: 25%;
-        z-index: 1;
-    }
-    .title-hotel span{
-        font-family: 'August Stories';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 128px;
-        line-height: 109px;
-        color: #F8578D;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%, 100%;
+    background-position: right 200px top 0px, left 500px bottom 200px;
+}
+
+.title-hotel {
+    margin-top: 30px;
+    font-family: 'Ivy Mode';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 61px;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    z-index: 1;
+}
+
+.title-hotel span {
+    font-family: 'August Stories';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 109px;
+    color: #F8578D;
+}
+
+.hotel-left {
+    margin: 100px 0px;
+    text-align: center;
+}
+
+.hotel-right {
+    position: relative;
+
+}
+
+.hotel-right p {
+    font-family: 'Work Sans', sans-serif;
+    ;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    text-align: justify;
+}
+
+.hotel-right button {
+    background: #FFFFFF;
+    border: 1px solid #333333;
+    border-radius: 20px;
+    position: absolute;
+    top: 65%;
+    padding: 12px 48px;
+
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .title-hotel {
+        text-align: center;
+        position: static;
+        font-size: 36px;
+        line-height: 46px;
     }
 
     .hotel-left {
-        margin: 100px 0px;
+        margin: 30px 0px;
         text-align: center;
     }
 
     .hotel-right {
-        position: relative;
-       
+        text-align: center;
+        padding-bottom: 68px;
     }
-    .hotel-right p{
-        font-family: 'Work Sans', sans-serif;;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 20px;
-        margin: 0;
-        position: absolute;
+
+    .hotel-right p {
+        position: static;
         top: 50%;
-        transform: translate(0%, -50%);
-        text-align: justify;
+        transform: translate(0%, 0%);
     }
-    
-    .hotel-right button{
-        background: #FFFFFF;
-        border: 1px solid #333333;
-        border-radius: 20px;
-        position: absolute;
-        top: 65%;
-        padding: 12px 48px;
 
-        font-family: 'Work Sans';
+    .title-hotel span {
+        font-family: 'August Stories';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 96px;
+        line-height: 81px;
+        color: #F8578D;
     }
-    @media screen and (min-width: 320px) and (max-width: 768px) {
-        .title-hotel{
-            text-align: center;
-            position: static;
-            font-size: 36px;
-            line-height:46px;
-           
-      
-        }
-        .hotel-left {
-            margin: 30px 0px;
-            text-align: center;
-        }   
 
-        .hotel-right{
-            text-align: center;
-            padding-bottom: 68px;
-        }
-
-        .hotel-right p{
-            position: static;
-            top: 50%;
-            transform: translate(0%, 0%);
-           
-        }
-
-        .title-hotel span{
-            font-family: 'August Stories';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 96px;
-            line-height: 81px;
-            color: #F8578D;
-        }
-        .hotel-right button{
-            position: static;
-        }
+    .hotel-right button {
+        position: static;
     }
+
+}
+   
     /*================== Folow us==============*/
     .title {
         font-family: "Ivy mode";
         background-color: #F3F1EB;
-        padding: 70px 0px;
+        padding: 10px 0px;
     }
 
     .top_follow {
@@ -277,22 +297,12 @@ text-transform: uppercase;
 
     .top_footer {
         color: white;
-        padding: 80px 0px;
     }
 
-    .mt-5.text-white {
+    .mb-5.text-white {
         background-color: rgba(0, 0, 0, 0.05);
         color: #626262 !important;
     }
-
-    .text-white {
-        font-family: 'Work Sans', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 20px;
-    }
-
     .booking_online {
         height: 100%;
         width: 100%;
@@ -300,7 +310,7 @@ text-transform: uppercase;
 
     .booking_online.title {
         background-image: url(../images/home/unsplash_q--99IzY8Lw.png);
-        background-repeat: no-repeat;
+        background-repeat: round;
         background-size: 100%;
     }
 
@@ -326,8 +336,10 @@ text-transform: uppercase;
     .bk-ol p {
         width: 40%;
         margin: 20px 0px;
-        padding: 0px 50px;
+        padding: 0px 30px;
+        color: black;
     }
+    
 
     input[type="number"] {
         -webkit-appearance: textfield;
@@ -371,8 +383,9 @@ text-transform: uppercase;
         text-align: center;
         background: rgba(255, 255, 255, 0.3);
         backdrop-filter: blur(30px);
-        width: 40%;
+        width: 50%;
         height: 50px;
+        display: inline;
     }
 
     .md-number-input.number-input button {
@@ -416,8 +429,10 @@ text-transform: uppercase;
         background-color: unset;
         padding: 0px 0px;
         margin: 0px 0px;
-        width: 10px;
+        width: 20px;
+        
     }
+
     /* ================= footer ============= */
     .footer {
         position: relative;
@@ -434,7 +449,7 @@ text-transform: uppercase;
         background-color: white;
         border-radius: 50%;
     }
-    
+
     .back-top a {
         width: 40px;
         height: 40px;
@@ -445,61 +460,71 @@ text-transform: uppercase;
         background: black;
         line-height: 35px;
     }
-    
-    .br-light{
+
+    .br-light {
         background-color: black;
     }
+
     .footer-headings {
-    border-bottom: 1px #484848 solid;
-    padding-bottom: 10px;
-    color: #FFFF;
-}
-
-    h6.title-footer{
-      font-family: 'CustomFont';
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    font-style: normal;
-        
+        border-bottom: 1px #484848 solid;
+        padding-bottom: 10px;
+        color: #FFFF;
     }
-    .text-white{
-      font-family: 'Work Sans', sans-serif;
-      font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 20px;
-    }
-p.btn-rounded.text-white:hover{
-  background-color: black;
-}
-.p-4.text-white{
-  background-color: rgba(0, 0, 0, 0.05); 
-  color:#626262 !important;
-}
 
-.btn-light:not(:disabled):not(.disabled):active:focus{
-  box-shadow: none;
-}
-.btn.back-to-top:active{
-border: 10px solid transparent;
-}
-h6.fw-bold.mb-4.title-footer span {
-    font-family: 'August Stories';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 54px;
+    h6.title-footer {
+        font-family: 'CustomFont';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        font-style: normal;
 
-}
-@media screen and (min-width: 1450px) and (max-width: 2560px) {
-    ul.menu-home li.nav-item {
-        padding-left: 5rem!important;
     }
-}
 
-@media screen and (min-width: 1024px) and (max-width: 1439px) {
-    .btn-booking{
-        width: 150px;
+    .text-white {
+        font-family: 'Work Sans', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
     }
-}
+
+    p.btn-rounded.text-white:hover {
+        background-color: black;
+    }
+
+    .p-4.text-white {
+        background-color: rgba(0, 0, 0, 0.05);
+        color: #626262 !important;
+    }
+
+    .btn-light:not(:disabled):not(.disabled):active:focus {
+        box-shadow: none;
+    }
+
+    .btn.back-to-top:active {
+        border: 10px solid transparent;
+    }
+
+    h6.fw-bold.mb-4.title-footer span {
+        font-family: 'August Stories';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 54px;
+
+    }
+
+    @media screen and (min-width: 1450px) and (max-width: 2560px) {
+        ul.menu-home li.nav-item {
+            padding-left: 5rem !important;
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1439px) {
+        .btn-booking {
+            width: 150px;
+        }
+    }
+    .follow_us.title{
+        padding: 50px 0px;
+    }
