@@ -15,13 +15,13 @@
     src: url("../font/Work_Sans/static/WorkSans-Medium.ttf");
 }
 
-ul.menu-home li.nav-item {
+ul.menu-home li.nav-item,
+.publicer {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    text-transform: uppercase;
 }
 
 .btn-circle.btn-sm {
@@ -212,7 +212,6 @@ section.container.main-page2 {
 .title {
     font-family: "Ivy mode";
     background-color: #F3F1EB;
-    padding: 10px 0px;
 }
 
 .top_follow {
@@ -246,7 +245,8 @@ section.container.main-page2 {
     margin-left: 25px;
 }
 
-.cont, .hotel_type ul p{
+.cont,
+.hotel_type ul p {
     font-family: "Work Sans";
     margin-top: 20px;
     margin-bottom: 0px;
@@ -390,10 +390,6 @@ input.quantity {
 
 }
 
-.follow_us.title {
-    padding: 50px 0px;
-}
-
 /* ================= footer ============= */
 .footer {
     position: relative;
@@ -499,11 +495,13 @@ h6.fw-bold.mb-4.title-footer span {
     .md-number-input.number-input {
         margin-top: 30px;
     }
+
     .hotel_type {
-        margin: 0px 0px!important;
+        margin: 0px 0px !important;
     }
+
     .hotel_img {
-        margin: 40px 0px!important;
+        margin: 40px 0px !important;
     }
 }
 
@@ -511,15 +509,18 @@ h6.fw-bold.mb-4.title-footer span {
     .bk-ol p {
         padding: 0px 0px;
     }
-.hotel_type {
-        margin: 0px 0px!important;
+
+    .hotel_type {
+        margin: 0px 0px !important;
     }
+
     .md-number-input.number-input {
         width: 100%;
 
     }
+
     .hotel_img {
-        margin: 40px 0px!important;
+        margin: 40px 0px !important;
     }
 }
 
@@ -564,7 +565,15 @@ h6.fw-bold.mb-4.title-footer span {
         max-width: 25% !important;
         bottom: 25px;
     }
-
+    /* .review_left p{
+        margin: 0px 105px 0px 25px;
+    } */
+    .review_left .image-1{
+        margin: 115px 0px 0px 30px!important;
+    }
+    .review_left .image-2{
+        margin: 75px 0px 0px 60px!important;
+    }
 }
 
 @media screen and (min-width: 1450px) and (max-width: 2560px) {
@@ -601,7 +610,8 @@ h6.fw-bold.mb-4.title-footer span {
 .hotel_type {
     margin: 100px 0px;
 }
-.hotel_img{
+
+.hotel_img {
     margin: 100px 0px;
 }
 
@@ -609,20 +619,75 @@ h6.fw-bold.mb-4.title-footer span {
     width: 100%;
     height: auto;
 }
-.hotel_type ul li span{
+
+.hotel_type ul li span {
     font-family: 'Work Sans', sans-serif;
     float: left;
     color: #666666;
     line-height: 40px;
 }
-.hotel_type ul li a{
+
+.hotel_type ul li a {
     color: black;
     font-size: 14px;
 }
+
 .hotel_type ul p {
     margin-left: 0px;
     margin-top: 50px;
 }
-.hotel_type ul p:first-child{
+
+.hotel_type ul p:first-child {
     margin-top: 0px;
+}
+
+/* review */
+.review {
+    background-color: black;
+    color: white;
+
+}
+
+.review .review_left {
+    font-size: 18px;
+}
+
+.review_left .image-1 {
+    width: 94px;
+    height: 0px;
+    margin: 170px 0px 70px 85px;
+    border: 1px solid #5E5E5E;
+    transform: rotate(90deg);
+}
+
+.review_left .image-2 {
+    height: 24.19px;
+    margin: 0px 115px;
+}
+
+.review_left p {
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+}
+.review_content {
+    margin: 70px 0px;
+}
+
+.review_content p {
+    font-family: 'Ivy Mode';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: justify;
+}
+.publicer {
+    float: right;
+    font-style: normal;
+    font-weight: 400!important;
 }
