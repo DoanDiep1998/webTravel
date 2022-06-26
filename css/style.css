@@ -14,6 +14,11 @@
     font-family: "WorkSans-Medium";
     src: url("../font/Work_Sans/static/WorkSans-Medium.ttf");
 }
+.ivy-mode-nor-400{
+    font-family: 'Ivy Mode';
+    font-style: normal;
+    font-weight: 400;
+}
 
 ul.menu-home li.nav-item {
     font-family: 'Work Sans';
@@ -149,9 +154,6 @@ section.container.main-page2 {
 
 .title-hotel {
     margin-top: 30px;
-    font-family: 'Ivy Mode';
-    font-style: normal;
-    font-weight: 400;
     font-size: 48px;
     line-height: 61px;
     position: absolute;
