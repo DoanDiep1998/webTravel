@@ -16,7 +16,8 @@
 }
 
 ul.menu-home li.nav-item,
-.publicer {
+.publicer,
+.discovery {
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 600;
@@ -147,16 +148,28 @@ section.container.main-page2 {
     background-position: right 200px top 0px, left 500px bottom 200px;
 }
 
-.title-hotel {
-    margin-top: 30px;
+.title-hotel,
+.hot-tours_gr h6, .get-inspried {
     font-family: 'Ivy Mode';
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
     line-height: 61px;
+    left: 40%;
+    top: 20%;
+    margin-top: 30px;
+    z-index: 1;   
+    color: black;
+}
+.get-inspried{
+    color: white;
+    margin-left: 100px;
+}
+.title-hotel {
     position: absolute;
     left: 40%;
     top: 20%;
+    margin-top: 30px;
     z-index: 1;
 }
 
@@ -390,6 +403,133 @@ input.quantity {
 
 }
 
+.wap-ss-img {
+    text-align: center;
+    width: 100%;
+}
+
+.wap-ss-img img {
+    margin: 0 auto;
+}
+
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: fontawesome !important;
+    font-size: 18px !important;
+    color: #fff !important;
+}
+
+.slick-prev:before {
+    content: '<' !important;
+    color: #4F4F4F !important;
+
+}
+
+.slick-next:before {
+
+    content: ">" !important;
+    color: #4F4F4F !important;
+}
+
+.slick-next {
+    z-index: 2;
+    right: 49% !important;
+}
+
+.slick-prev {
+    z-index: 2;
+    left: 48% !important;
+}
+
+.inspried {
+    background: #3F3236;
+    position: relative;
+    color: #fff;
+}
+
+.inspried-circle, .inspried-circlee {
+    z-index: 1;
+    left: 48%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 46%;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+} 
+.inspried-circlee{
+    top: 52%!important;
+}
+.brbox {
+    position: relative;
+}
+
+.textleft {
+    bottom: 15px;
+    text-align: center;
+    width: 100%;
+    font-weight: 400;
+    top: 80%;
+    position: absolute;
+    color: #FFFFFF;
+    font-family: 'Ivy Mode';
+}
+
+
+.textleft-title {
+    font-family: 'Ivy Mode';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+}
+
+.brbox-first-item {
+    padding: 100px 0px;
+}
+
+.destination {
+    font-family: 'August Stories';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 120px;
+    line-height: 102px;
+    color: #764D4D;
+    text-align: right;
+}
+
+.brbox-first-item-title {
+    font-size: 48px;
+    line-height: 61px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Ivy Mode';
+}
+button.view-all {
+    color: black;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    padding: 12px 40px;
+    width: fit-content;
+    background-color: #F3F1EB;
+    margin: 60px 0px;
+    font-family: 'Work Sans';
+    font-size: 14px;
+    line-height: 16px;
+}
+.discovery {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 12px 40px;
+    width: fit-content;
+    margin: 20px 95px;
+    background: #3F3236;
+    font-weight: 400;
+}
+
 /* ================= footer ============= */
 .footer {
     position: relative;
@@ -462,15 +602,26 @@ p.btn-rounded.text-white:hover {
     border: 10px solid transparent;
 }
 
-h6.fw-bold.mb-4.title-footer span {
+.title-footer span,
+.hot-tours_gr span {
     font-family: 'August Stories';
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
     line-height: 54px;
+}
+
+.hot-tours_gr span {
+    font-size: 96px;
+    line-height: 81px;
+    color: #8C8C8C;
 
 }
 
+div#hot-tours {
+    background: #F3F1EB;
+    padding-bottom: 70px;
+}
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
     .back-top {
@@ -503,9 +654,15 @@ h6.fw-bold.mb-4.title-footer span {
     .hotel_img {
         margin: 40px 0px !important;
     }
+    .inspried-circle, .inspried-circlee, .slick-next, .slick-prev{
+        display: none!important;
+    }
 }
 
 @media screen and (min-width: 425px) and (max-width: 768px) {
+    .inspried-circle, .inspried-circlee, .slick-next, .slick-prev{
+        display: none!important;
+    }
     .bk-ol p {
         padding: 0px 0px;
     }
@@ -565,14 +722,32 @@ h6.fw-bold.mb-4.title-footer span {
         max-width: 25% !important;
         bottom: 25px;
     }
+
     /* .review_left p{
         margin: 0px 105px 0px 25px;
     } */
-    .review_left .image-1{
-        margin: 115px 0px 0px 30px!important;
+    .review_left .image-1 {
+        margin: 80px 0px 0px 0px !important;
     }
-    .review_left .image-2{
-        margin: 75px 0px 0px 60px!important;
+
+    .review_left .image-2 {
+        margin: 70px 0px 0px 30px !important;
+    }
+    .view-top .view-all{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .review_left .image-2 {
+        margin: 0px 100px;
+    }
+
+    .review_left .image-1 {
+        margin: 150px 0px 70px 65px;
+    }
+    button.bt{
+        display: none;
     }
 }
 
@@ -580,11 +755,17 @@ h6.fw-bold.mb-4.title-footer span {
     ul.menu-home li.nav-item {
         padding-left: 5rem !important;
     }
+    button.bt{
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .btn-booking {
         width: 150px;
+    }
+    button.bt{
+        display: none;
     }
 }
 
@@ -605,14 +786,6 @@ h6.fw-bold.mb-4.title-footer span {
 
 .hotel_type ul span {
     font-size: 14px;
-}
-
-.hotel_type {
-    margin: 100px 0px;
-}
-
-.hotel_img {
-    margin: 100px 0px;
 }
 
 .hotel_img img {
@@ -655,14 +828,14 @@ h6.fw-bold.mb-4.title-footer span {
 .review_left .image-1 {
     width: 94px;
     height: 0px;
-    margin: 170px 0px 70px 85px;
+    margin: 190px 0px 70px 110px;
     border: 1px solid #5E5E5E;
     transform: rotate(90deg);
 }
 
 .review_left .image-2 {
     height: 24.19px;
-    margin: 0px 115px;
+    margin: 0px 140px;
 }
 
 .review_left p {
@@ -674,8 +847,9 @@ h6.fw-bold.mb-4.title-footer span {
     text-transform: uppercase;
     transform: rotate(-90deg);
 }
+
 .review_content {
-    margin: 70px 0px;
+    padding: 100px 0px;
 }
 
 .review_content p {
@@ -686,8 +860,9 @@ h6.fw-bold.mb-4.title-footer span {
     line-height: 40px;
     text-align: justify;
 }
+
 .publicer {
     float: right;
     font-style: normal;
-    font-weight: 400!important;
+    font-weight: 400 !important;
 }
